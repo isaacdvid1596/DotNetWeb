@@ -1,0 +1,135 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "DotNetWeb.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/DotNetWeb.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DotNetWeb.Core.dll": {}
+        }
+      },
+      "DotNetWeb.Lexer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "DotNetWeb.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DotNetWeb.Lexer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DotNetWeb.Lexer.dll": {}
+        }
+      },
+      "DotNetWeb.Parser/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "DotNetWeb.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DotNetWeb.Parser.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DotNetWeb.Parser.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DotNetWeb.Core/1.0.0": {
+      "type": "project",
+      "path": "../DotNetWeb.Core/DotNetWeb.Core.csproj",
+      "msbuildProject": "../DotNetWeb.Core/DotNetWeb.Core.csproj"
+    },
+    "DotNetWeb.Lexer/1.0.0": {
+      "type": "project",
+      "path": "../DotNetWeb.Lexer/DotNetWeb.Lexer.csproj",
+      "msbuildProject": "../DotNetWeb.Lexer/DotNetWeb.Lexer.csproj"
+    },
+    "DotNetWeb.Parser/1.0.0": {
+      "type": "project",
+      "path": "../DotNetWeb.Parser/DotNetWeb.Parser.csproj",
+      "msbuildProject": "../DotNetWeb.Parser/DotNetWeb.Parser.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "DotNetWeb.Core >= 1.0.0",
+      "DotNetWeb.Lexer >= 1.0.0",
+      "DotNetWeb.Parser >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\isaac\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\isaac\\Source\\Repos\\DotNetWebTemplateCompiler\\DotNetWeb.Console\\DotNetWeb.Console.csproj",
+      "projectName": "DotNetWeb.Console",
+      "projectPath": "C:\\Users\\isaac\\Source\\Repos\\DotNetWebTemplateCompiler\\DotNetWeb.Console\\DotNetWeb.Console.csproj",
+      "packagesPath": "C:\\Users\\isaac\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\isaac\\Source\\Repos\\DotNetWebTemplateCompiler\\DotNetWeb.Console\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\isaac\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6",
+          "projectReferences": {
+            "C:\\Users\\isaac\\Source\\Repos\\DotNetWebTemplateCompiler\\DotNetWeb.Core\\DotNetWeb.Core.csproj": {
+              "projectPath": "C:\\Users\\isaac\\Source\\Repos\\DotNetWebTemplateCompiler\\DotNetWeb.Core\\DotNetWeb.Core.csproj"
+            },
+            "C:\\Users\\isaac\\Source\\Repos\\DotNetWebTemplateCompiler\\DotNetWeb.Lexer\\DotNetWeb.Lexer.csproj": {
+              "projectPath": "C:\\Users\\isaac\\Source\\Repos\\DotNetWebTemplateCompiler\\DotNetWeb.Lexer\\DotNetWeb.Lexer.csproj"
+            },
+            "C:\\Users\\isaac\\Source\\Repos\\DotNetWebTemplateCompiler\\DotNetWeb.Parser\\DotNetWeb.Parser.csproj": {
+              "projectPath": "C:\\Users\\isaac\\Source\\Repos\\DotNetWebTemplateCompiler\\DotNetWeb.Parser\\DotNetWeb.Parser.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
